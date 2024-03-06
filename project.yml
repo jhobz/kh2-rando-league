@@ -1,0 +1,21 @@
+parameters: {}
+environment: {}
+packages:
+    - name: manage-seeds
+      shared: false
+      environment: {}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: getSeed
+          binary: false
+          main: ""
+          runtime: nodejs:default
+          web: true
+          websecure: false
+          parameters: {}
+          environment: {}
+          annotations: {}
+          limits: {}
+        - name: generateSeed
+          runtime: python:default
